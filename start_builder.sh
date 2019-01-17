@@ -32,7 +32,7 @@ function update_deps {
     case "${OS}" in
         ( "centos"* ) update_deps_yum ;;
         ( "trusty"* | "xenial" | "bionic" ) update_deps_apt ;;
-        ( "android" | "arm"* ) update_deps_android ;;
+        ( "android" | "arm"* | "cell") update_deps_android ;;
     esac
 }
 
